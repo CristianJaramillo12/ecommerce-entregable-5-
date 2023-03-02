@@ -1,0 +1,55 @@
+.box_container_form_register {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box_form_conteiner {
+  width: 450px;
+  height: 350px;
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+}
+
+.box_input {
+  width: 100%;
+  padding-left: 3em;
+  display: flex;
+  gap: 1em;
+  padding-left: 3em;
+}
+
+.input_register {
+  margin-left: 2.5em;
+}
+
+.input_password {
+  margin-left: 0.4em;
+}
+.input_phone {
+  margin-left: 2.1em;
+}
+
+.button_register {
+  width: 100px;
+  height: 40px;
+  margin-left: 9.8em;
+  background-color: #f85555;
+  color: white;
+  border: none;
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+  transition: transform 100ms ease;
+  cursor: pointer;
+}
+
+.button_register:hover {
+  transform: scale(1.1);
+}

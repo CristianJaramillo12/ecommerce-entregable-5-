@@ -1,0 +1,143 @@
+/* aqui va para controlar toda la home */
+
+.box_container_total {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 7vh;
+}
+
+/* aqui va para controlar el home de busqueda en el input */
+
+.box_container_cards {
+  width: 80%;
+  margin-left: 20%;
+}
+
+.home_form {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 2em;
+  padding-left: 2em;
+}
+
+.home_form_input {
+  width: 82%;
+  height: 45px;
+  box-shadow: 0px 0px 1.5px 0px rgba(0,0,0,0.75);
+  border: none;
+}
+
+.home_form_button {
+  width: 50px;
+  height: 45px;
+  background-color: #f85555;
+  color: white;
+  border: none;
+  box-shadow: 0px 0px 1.5px 0px rgba(0,0,0,0.75);
+  transition: transform 100ms ease;
+  cursor: pointer;
+}
+
+.home_form_button:hover {
+  transform: scale(1.1);
+}
+
+.home_form_input::placeholder {
+  color: #ababab;
+}
+
+/* Formulario de filtro de precio */
+
+.home_form_filter_price {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  margin-top: 1em;
+}
+
+.button_filter {
+  height: 40px;
+  background-color: #f85555;
+  color: white;
+  border: none;
+  box-shadow: 0px 0px 1.5px 0px rgba(0,0,0,0.75);
+  transition: transform 100ms ease;
+  cursor: pointer;
+}
+
+.button_filter:hover {
+  transform: scale(1.1);
+}
+
+/* aqui va el css del filter y las categorias */
+
+.home_filter_price {
+  width: 20%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+.home_price {
+  padding-top: 2em;
+  padding-left: 2em;
+}
+
+.home_filter {
+  width: 100%;
+  height: 100vh;
+  
+  padding-top: 2em;
+  border-left: 1px solid black;
+  padding-left: 2em;
+}
+
+.filter_categorys {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2em;
+  border-bottom: 1px solid black;
+}
+
+.category_title {
+  padding-top: 1em;
+  margin-bottom: 0.2em;
+}
+
+.bx_icon {
+  padding-top: 1em;
+}
+
+.box_category_list {
+  width: 100%;
+  padding-left: 1em;
+  padding-top: 1em;
+}
+
+.list_unit_category {
+  cursor: pointer;
+  transition: transform 100ms ease;
+}
+
+.list_unit_category:hover {
+  transform: scale(1.1);
+}
+
+
+
+/* aqui va la seccion de las cards de cada producto */
+
+.box_home {
+  min-height: 400px;
+  margin-top: 3em;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  padding-left: 2em;
+  row-gap: 1.7em;
+  justify-content: center;
+}

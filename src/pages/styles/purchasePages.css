@@ -1,0 +1,17 @@
+.box_purchase_page {
+  width: 100%;
+  padding-top: 10vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box_purchase_card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

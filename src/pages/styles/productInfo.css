@@ -1,0 +1,209 @@
+.box_container_info {
+  width: 100%;
+  padding-top: 7vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.info_home {
+  width: 90%;
+  height: 12vh;
+  
+}
+
+.home_link {
+  padding: 1em 0 0 1em;
+}
+
+.link_home {
+  text-decoration: none;
+  color: black;
+}
+
+.link_home:hover {
+  color: #f85555;
+}
+
+.info_description {
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.description_image {
+  width: 50%;
+  height: 100%;
+  
+}
+
+.description_caracterist {
+  width: 50%;
+  height: 100%;
+  
+}
+
+.description_image {
+  width: 80%;
+  height: 60%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image_img_info {
+  width: 80%;
+  height: 80%;
+  display: block;
+  object-fit: contain;
+}
+
+.description_caracterist {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.caracterist_1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.uno_brand {
+  padding: 1em 0 0 1em;
+  font-size: 20px;
+}
+
+.uno_title {
+  padding-left: 2em;
+  padding-right: 1.5em;
+  font-size: 23px;
+}
+
+
+.dos_description {
+  padding: 0.7em;
+  text-align: justify;
+}
+
+.caracterist_3 {
+  display: flex;
+  flex-direction: row;
+}
+
+.tres_price {
+  width: 40%;
+  padding-left: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.price_title_container {
+  margin: 0;
+  width: 60%;
+  font-size: 20px;
+}
+
+.price_number_letter::before {
+  content: '$ ';
+}
+
+.price_number_letter {
+  padding-top: 0.8em;
+  padding-left: 0.7em;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.title_quantility {
+  text-align: center;
+  margin: 0;
+}
+
+.quantility_add {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1em;
+}
+
+.add_box{
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 0.1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 100ms ease;
+  cursor: pointer;
+}
+
+.add_box:hover{
+  transform: scale(1.1);
+}
+
+.add_number {
+  width: 60px;
+  height: 40px;
+}
+
+.caracterist_4 {
+  width: 100%;
+  padding-top: 2em;
+}
+
+.cuatro_button_add {
+  width: 100%;
+  height: 60px;
+  background-color: #f85555;
+  font-size: 22px;
+  color: white;
+  transition: transform 100ms ease;
+  cursor: pointer;
+}
+
+.cuatro_button_add:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 500px) {
+  .box_container_info {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info_description {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .description_image {
+    width: 100%;
+  }
+
+  .description_caracterist {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
+
+
+
+

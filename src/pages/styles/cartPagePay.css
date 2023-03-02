@@ -1,0 +1,28 @@
+.box_conteiner_cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.box_item_cart {
+  position: relative;
+  margin-top: 7vh;
+  width: 50%;
+  height: 70vh;
+ 
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.box_letter_cart {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+}

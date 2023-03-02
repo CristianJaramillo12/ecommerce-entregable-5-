@@ -1,0 +1,128 @@
+.box_header {
+  position: fixed;
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+  background-color: white;
+}
+
+.box_header_container1{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.box_header_title1 {
+  font-size: 40px;
+  padding-top: 0.4em;
+  padding-left: 1em;
+}
+
+.box_header_title {
+  color: #f85555;
+  text-decoration: none;
+}
+
+.box_header_container2 {
+  width: 60%;
+  height: 100%;
+}
+
+.box_nav_ul {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.box_nav_menu {
+  width: 150px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+  font-size: 1.5em;
+  transition: trnasform 100ms ease;
+}
+
+.box_nav_menu:hover {
+  transform: scale(1.3);
+  box-shadow: none;
+}
+
+.nav_menu_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #ababab;
+}
+
+.nav_toggle {
+  display: none;
+}
+
+@media (max-width: 500px) {
+
+  .box_header {
+    height: 10vh;
+    box-shadow: none;
+  }
+
+  .box_header_title1 {
+    font-size: 40px;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+  }
+
+  .box_header_container2 {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    background-color: #f85555;
+    width: 50%;
+    height: 90vh;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: 0.3s ease all;
+  }
+
+  .box_header_container2 .open {
+    transform: translateX(0) !important;
+  }
+
+  .box_nav_ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 1em;
+    padding-top: 2em;
+    padding-left: 1em;
+  }
+
+  .box_nav_menu {
+    width: 70%;
+    height: 50px;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+  }
+
+  .nav_toggle{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 1em;
+    top: 0.3em;
+    font-size: 2em;
+  }
+}
